@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StarWarsApp</string>
+    <string name="first_fragment_label">Character List</string>
+    <string name="second_fragment_label">Character Movies</string>
+
+    <string name="height_text">Height: %1$s</string>
+    <string name="mass_text">Mass: %1$s</string>
+    <string name="skin_color_text">Skin Color: %1$s</string>
+    <string name="eye_color_text">Eye Color: %1$s</string>
+</resources>

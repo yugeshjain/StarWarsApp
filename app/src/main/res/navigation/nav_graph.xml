@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/nav_graph"
+app:startDestination="@id/allCharactersFragment">
+
+<fragment
+    android:id="@+id/allCharactersFragment"
+    android:name="app.yugesh.starwars.presentation.screens.allCharacters.AllCharactersFragment"
+    android:label="@string/first_fragment_label"
+    tools:layout="@layout/fragment_all_characters">
+    <action
+        android:id="@+id/action_AllCharactersFragment_to_CharacterDetailsFragment"
+        app:destination="@id/CharacterDetailsFragment">
+        <argument
+            android:name="characterUrl"
+            app:argType="string"
+            android:defaultValue=""/>
+    </action>
+</fragment>
+
+<fragment
+    android:id="@+id/CharacterDetailsFragment"
+    android:name="app.yugesh.starwars.presentation.screens.characterDetails.CharacterDetailsFragment"
+    android:label="@string/second_fragment_label"
+    tools:layout="@layout/fragment_character_details">
+
+    <action
+        android:id="@+id/action_CharacterDetailsFragment_to_AllCharactersFragment"
+        app:destination="@id/allCharactersFragment" />
+</fragment>
+</navigation>
